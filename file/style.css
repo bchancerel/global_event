@@ -1,0 +1,35 @@
+.navbar-brand:hover{
+    animation-name: anim_menu;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes anim_menu{
+    from{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    to{
+        transform: scale(1, 1);
+    }
+}
+.nav-link{
+    margin: 5px;
+}
+.nav-link:hover{
+    animation-name: anim_button;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes anim_button{
+    from{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.1, 1.1);
+    }
+    to{
+        transform: scale(1, 1);
+    }
+}
