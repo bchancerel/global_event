@@ -14,9 +14,8 @@
         transform: scale(1, 1);
     }
 }
-.nav-link{
-    margin: 5px;
-}
+
+
 .nav-link:hover{
     animation-name: anim_button;
     animation-duration: 1s;
@@ -32,4 +31,7 @@
     to{
         transform: scale(1, 1);
     }
+}
+.navbar navbar-expand-lg navbar-light bg-light fixed-top{
+    background-color: aqua;
 }
