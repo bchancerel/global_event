@@ -1,3 +1,10 @@
+body{
+    background-color: #c2eeec;
+    display: flex;
+    text-align: center;
+}
+
+
 .navbar-brand:hover{
     animation-name: anim_menu;
     animation-duration: 1s;
@@ -31,7 +38,4 @@
     to{
         transform: scale(1, 1);
     }
-}
-.navbar navbar-expand-lg navbar-light bg-light fixed-top{
-    background-color: aqua;
 }
