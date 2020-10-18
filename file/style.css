@@ -1,5 +1,4 @@
 body{
-    background-color: #c2eeec;
     display: flex;
     text-align: center;
 }
@@ -38,4 +37,16 @@ body{
     to{
         transform: scale(1, 1);
     }
+}
+
+.nav-item-active{
+    font-weight: 600;
+}
+.nav-item-active:hover{
+    font-weight: normal;
+}
+.dropdown-item:hover{
+    animation-name: anim_button;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
