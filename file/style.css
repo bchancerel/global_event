@@ -1,6 +1,10 @@
 body{
     text-align: center;
     width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .navbar-brand:hover{
     animation-name: anim_menu;
@@ -119,4 +123,94 @@ body{
     float: left;
     shape-outside: circle();
     margin: 10px;
+}
+
+.box{
+    position: relative;
+    align-self: center;
+    top: 300px;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21;
+    transition: 0.5s;
+}
+
+.box:hover{
+    height: 400px;
+}
+
+.box .ImageBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .ImageBox .us{
+    max-width: 100%;
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.box:hover .ImageBox .us{
+    opacity: 1;
+}
+.box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+.box:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+    filter: blur(40px);
+}
+
+.box:before,
+.box:after{
+    background: linear-gradient(235deg, #ffffff, #0cebdf, #ffffff);
+}
+.box .infoBox{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.box:hover .infoBox {
+    opacity: 1;
+}
+.box .infoBox .nous {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
