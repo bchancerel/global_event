@@ -8,15 +8,23 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-      <ul class="navbar navbar-expand-lg fixed-top" style="background-color: #aaeeee">
-          <a class="navbar-brand" style="color: black;" href="#">Global Event</a>
-          <button class="navbar-toggler hidden-lg-up" type="button" style="background-color: rgb(56, 56, 56);" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-              aria-expanded="false" aria-label="Toggle navigation"></button>
-          <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar navbar-expand-lg fixed-top" style="background-color: #aaeeee;">
+        <a class="navbar-brand" style="color: black;" href="#">Global Event</a>
+        <button class="navbar-toggler d-lg-none" style="background-color: rgb(56, 56, 56);" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" style="color: black;" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
@@ -37,10 +45,28 @@
                   <a class="nav-link" style="color: black;" href="nous.html">Qui sommes nous ?</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <ul class="navbar-nav my-2 my-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;"></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                  <a class="ins-ic">
+                    <i class="fab fa-instagram mr-md-5 mr-3 fa-2x"> </i>
+                  </a>
+                </div>
+              </li>
+            </ul>
           </div>
         </nav>
       </ul>
