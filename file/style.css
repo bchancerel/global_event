@@ -39,6 +39,7 @@ body{
     font-weight: 600;
     box-shadow: 0 2px 3px 0;
     border-radius: 30px;
+    background-color: red;
 }
 .nav-item-active{
     animation: active-style 0.5s 1;
@@ -46,9 +47,11 @@ body{
 @keyframes active-style{
     from{
         border-radius: 10px;
+        background-color:  #aaeeee;
     }
     to{
         border-radius: 30px;
+        background-color: red;
     }
 }
 
