@@ -42,7 +42,7 @@ body{
     background-color: rgb(255, 255, 255);
 }
 .nav-item-active{
-    animation: active-style 0.5s 1;
+    animation: active-style 1s 1;
 }
 @keyframes active-style{
     from{
@@ -50,7 +50,7 @@ body{
         background-color:  #aaeeee;
     }
     to{
-        border-radius: 30px;
+        border-radius: 50px;
         background-color: rgb(255, 255, 255);
     }
 }
@@ -142,6 +142,7 @@ body{
     align-items: center;
     margin: 40px;
 }
+
 .box{
     position: relative;
     align-self: center;
