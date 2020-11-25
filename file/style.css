@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: #f6f5ec;
 }
 
 body{
@@ -29,6 +30,16 @@ body{
 
 .nav-link{
     margin: 10px;
+    color: black;
+}
+.nav-link:hover{
+    margin: 10px;
+    color: #f6f5ec;
+    font-weight: bold;
+    
+}
+.nav-link-active{
+    color: black;
 }
 .nav-item{
     margin-left: 5px;
@@ -37,26 +48,26 @@ body{
 
 .nav-item-active{
     font-weight: 600;
-    box-shadow: 0 2px 3px 0;
+    box-shadow: 0 2px 5px 0 ;
     border-radius: 30px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ed7c74;
 }
 .nav-item-active{
-    animation: active-style 1s 1;
+    animation: active-style 1.5s 1;
 }
 @keyframes active-style{
     from{
         border-radius: 10px;
-        background-color:  #aaeeee;
+        background-color:  #7fb8bc;
     }
     to{
         border-radius: 50px;
-        background-color: rgb(255, 255, 255);
+        background-color: #ed7c74;
     }
 }
 
 .nav-item:hover{
-    box-shadow: 0 1px 2px 0;
+    box-shadow: 0 1px 5px 0;
     border-radius: 10px;
 }
 
@@ -79,7 +90,7 @@ body{
     font-weight: 700;
     letter-spacing: 8px;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #f8f7f3;
     position: relative;
     animation: text 2s 1;
 }
@@ -203,10 +214,6 @@ body{
     filter: blur(40px);
 }
 
-.box:before,
-.box:after{
-    background: linear-gradient(235deg, #ffffff, #0cebdf, #ffffff);
-}
 .box .infoBox{
     position: absolute; 
     bottom: 0;
