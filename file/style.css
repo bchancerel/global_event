@@ -45,6 +45,10 @@ body{
     margin-left: 5px;
     margin-right: 5px;
 }
+.nav-item-2{
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 .nav-item-active{
     font-weight: 600;
@@ -52,6 +56,13 @@ body{
     border-radius: 30px;
     background-color: #ed7c74;
 }
+.nav-item-active-2{
+    font-weight: 600;
+    box-shadow: 0 2px 5px 0 ;
+    border-radius: 30px;
+    background-color: #e4ce5a;
+}
+
 .nav-item-active{
     animation: active-style 1.5s 1;
 }
@@ -66,7 +77,26 @@ body{
     }
 }
 
+.nav-item-active-2{
+    animation: active-style-2 1.5s 1;
+}
+@keyframes active-style-2{
+    from{
+        border-radius: 10px;
+        background-color:  #7fb8bc;
+    }
+    to{
+        border-radius: 50px;
+        background-color: #e4ce5a;
+    }
+}
+
 .nav-item:hover{
+    box-shadow: 0 1px 5px 0;
+    border-radius: 10px;
+}
+
+.nav-item-2:hover{
     box-shadow: 0 1px 5px 0;
     border-radius: 10px;
 }
@@ -170,7 +200,7 @@ body{
     align-self: center;
     top: 300px;
     width: 300px;
-    height: 400px;
+    height: 350px;
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -180,7 +210,7 @@ body{
 } 
 
 .box:hover{
-    height: 500px;
+    height: 400px;
 }
 
 
